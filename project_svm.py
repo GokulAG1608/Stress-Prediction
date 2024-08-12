@@ -33,7 +33,9 @@ plt.title('STRESS PREDICTION')
 plt.legend()
 plt.show()
 
+
 """test data"""
+
 
 x=df.iloc[:,[1,2]]
 y=df.iloc[:,3]
