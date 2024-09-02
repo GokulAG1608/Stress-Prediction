@@ -28,14 +28,6 @@ y
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=.35,random_state=1)
 
-x_test.shape
-
-x_train.shape
-
-y_train.shape
-
-y_test.shape
-
 """Logistic regression"""
 
 from sklearn.preprocessing import StandardScaler
@@ -43,10 +35,6 @@ sc=StandardScaler()
 
 x_train=sc.fit_transform(x_train)
 x_test=sc.transform(x_test)
-
-x_train
-
-x_test
 
 from sklearn.metrics import classification_report
 from sklearn.linear_model import LogisticRegression
